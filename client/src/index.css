@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+
+  /* DejaYou custom colors */
+  --coral: hsl(0, 79%, 70%);
+  --teal: hsl(174, 65%, 60%);
+  --sunset: hsl(51, 100%, 70%);
+  --softpink: hsl(0, 75%, 76%);
+  --darktext: hsl(0, 0%, 17%);
+  --lightbg: hsl(0, 0%, 97%);
+  --softgray: hsl(0, 0%, 91%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-coral { background-color: var(--coral); }
+  .bg-teal { background-color: var(--teal); }
+  .bg-sunset { background-color: var(--sunset); }
+  .bg-softpink { background-color: var(--softpink); }
+  .bg-darktext { background-color: var(--darktext); }
+  .bg-lightbg { background-color: var(--lightbg); }
+  .bg-softgray { background-color: var(--softgray); }
+  
+  .text-coral { color: var(--coral); }
+  .text-teal { color: var(--teal); }
+  .text-sunset { color: var(--sunset); }
+  .text-softpink { color: var(--softpink); }
+  .text-darktext { color: var(--darktext); }
+  .text-lightbg { color: var(--lightbg); }
+  .text-softgray { color: var(--softgray); }
+  
+  .border-coral { border-color: var(--coral); }
+  .border-teal { border-color: var(--teal); }
+  .border-sunset { border-color: var(--sunset); }
+  .border-softpink { border-color: var(--softpink); }
+  .border-darktext { border-color: var(--darktext); }
+  .border-lightbg { border-color: var(--lightbg); }
+  .border-softgray { border-color: var(--softgray); }
+  
+  .gradient-coral-sunset {
+    background: linear-gradient(135deg, var(--coral), var(--sunset));
+  }
+  
+  .gradient-coral-teal {
+    background: linear-gradient(135deg, var(--coral), var(--teal));
+  }
+  
+  .gradient-sunset-teal {
+    background: linear-gradient(135deg, var(--sunset), var(--teal));
+  }
+  
+  .gradient-warm {
+    background: linear-gradient(135deg, 
+      hsl(0, 79%, 70%, 0.2), 
+      hsl(51, 100%, 70%, 0.2), 
+      hsl(174, 65%, 60%, 0.2)
+    );
+  }
+  
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+  
+  .shadow-warm {
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.15);
+  }
+  
+  .timeline-line {
+    background: linear-gradient(to bottom, var(--coral), var(--teal), var(--sunset));
+  }
+}
