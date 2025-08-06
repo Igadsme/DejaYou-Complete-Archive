@@ -13,8 +13,8 @@ Three Interaction Types:
 🫂 Relate: Deep emotional connection, immediate match with shared chapters
 User Experience
 Life Event Timeline: Build your personal story with formative experiences
-Shared Chapters: Unlock detailed stories when both users "Relate"
-Photo Gallery: Mobile-style photo upload and browsing
+Shared Chapters: Unlock detailed stories when both users "Relate" (swipes right)
+Photo Gallery: Mobile-style photo upload and browsing.
 Gender Preferences: Filter matches by preferred gender
 Real-time Messaging: Chat with your matches
 Conversation Starters: AI-generated questions based on shared experiences
